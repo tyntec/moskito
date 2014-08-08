@@ -16,6 +16,28 @@ public class OfflineChart {
 	private String caption;
 
 	/**
+	 * Maximum size of a generated chart.
+	 */
+	private int width = 900;
+	private int height = 600;
+
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+	/**
 	 * Definition of chart lines.
 	 */
 	private List<OfflineChartLineDefinition> lineDefinitions = new LinkedList<OfflineChartLineDefinition>();
